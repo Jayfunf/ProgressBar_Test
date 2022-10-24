@@ -13,7 +13,7 @@
 		86A27B242906341700B6FF97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A27B222906341700B6FF97 /* Main.storyboard */; };
 		86A27B262906341800B6FF97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A27B252906341800B6FF97 /* Assets.xcassets */; };
 		86A27B292906341800B6FF97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A27B272906341800B6FF97 /* LaunchScreen.storyboard */; };
-		86A27B3529063B5700B6FF97 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A27B3429063B5700B6FF97 /* PieChartView.swift */; };
+		86A27B3729066DB700B6FF97 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A27B3629066DB700B6FF97 /* ChartView.swift */; };
 		87D442F587B5378727134402 /* Pods_ProgressBar_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162ACAD64E459002CE20FE2A /* Pods_ProgressBar_Test.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		86A27B252906341800B6FF97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86A27B282906341800B6FF97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86A27B2A2906341800B6FF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86A27B3429063B5700B6FF97 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		86A27B3629066DB700B6FF97 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		B349BD018B1C368A385364F3 /* Pods-ProgressBar_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressBar_Test.debug.xcconfig"; path = "Target Support Files/Pods-ProgressBar_Test/Pods-ProgressBar_Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +50,6 @@
 				B349BD018B1C368A385364F3 /* Pods-ProgressBar_Test.debug.xcconfig */,
 				372C6B46FCF8FD003DC3A3CF /* Pods-ProgressBar_Test.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,11 +77,11 @@
 				86A27B1C2906341700B6FF97 /* AppDelegate.swift */,
 				86A27B1E2906341700B6FF97 /* SceneDelegate.swift */,
 				86A27B202906341700B6FF97 /* ViewController.swift */,
-				86A27B3429063B5700B6FF97 /* PieChartView.swift */,
 				86A27B222906341700B6FF97 /* Main.storyboard */,
 				86A27B252906341800B6FF97 /* Assets.xcassets */,
 				86A27B272906341800B6FF97 /* LaunchScreen.storyboard */,
 				86A27B2A2906341800B6FF97 /* Info.plist */,
+				86A27B3629066DB700B6FF97 /* ChartView.swift */,
 			);
 			path = ProgressBar_Test;
 			sourceTree = "<group>";
@@ -210,9 +209,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86A27B3529063B5700B6FF97 /* PieChartView.swift in Sources */,
 				86A27B212906341700B6FF97 /* ViewController.swift in Sources */,
 				86A27B1D2906341700B6FF97 /* AppDelegate.swift in Sources */,
+				86A27B3729066DB700B6FF97 /* ChartView.swift in Sources */,
 				86A27B1F2906341700B6FF97 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
