@@ -13,9 +13,13 @@
 		86A27B242906341700B6FF97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A27B222906341700B6FF97 /* Main.storyboard */; };
 		86A27B262906341800B6FF97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A27B252906341800B6FF97 /* Assets.xcassets */; };
 		86A27B292906341800B6FF97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A27B272906341800B6FF97 /* LaunchScreen.storyboard */; };
+		86A27B3529063B5700B6FF97 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A27B3429063B5700B6FF97 /* PieChartView.swift */; };
+		87D442F587B5378727134402 /* Pods_ProgressBar_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162ACAD64E459002CE20FE2A /* Pods_ProgressBar_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		162ACAD64E459002CE20FE2A /* Pods_ProgressBar_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgressBar_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		372C6B46FCF8FD003DC3A3CF /* Pods-ProgressBar_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressBar_Test.release.xcconfig"; path = "Target Support Files/Pods-ProgressBar_Test/Pods-ProgressBar_Test.release.xcconfig"; sourceTree = "<group>"; };
 		86A27B192906341700B6FF97 /* ProgressBar_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressBar_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A27B1C2906341700B6FF97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86A27B1E2906341700B6FF97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		86A27B252906341800B6FF97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86A27B282906341800B6FF97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86A27B2A2906341800B6FF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86A27B3429063B5700B6FF97 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		B349BD018B1C368A385364F3 /* Pods-ProgressBar_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressBar_Test.debug.xcconfig"; path = "Target Support Files/Pods-ProgressBar_Test/Pods-ProgressBar_Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87D442F587B5378727134402 /* Pods_ProgressBar_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FEFE55F928287C20BE012B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B349BD018B1C368A385364F3 /* Pods-ProgressBar_Test.debug.xcconfig */,
+				372C6B46FCF8FD003DC3A3CF /* Pods-ProgressBar_Test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		86A27B102906341700B6FF97 = {
 			isa = PBXGroup;
 			children = (
 				86A27B1B2906341700B6FF97 /* ProgressBar_Test */,
 				86A27B1A2906341700B6FF97 /* Products */,
+				0FEFE55F928287C20BE012B4 /* Pods */,
+				9C75CE330C917F2429F1E196 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +78,21 @@
 				86A27B1C2906341700B6FF97 /* AppDelegate.swift */,
 				86A27B1E2906341700B6FF97 /* SceneDelegate.swift */,
 				86A27B202906341700B6FF97 /* ViewController.swift */,
+				86A27B3429063B5700B6FF97 /* PieChartView.swift */,
 				86A27B222906341700B6FF97 /* Main.storyboard */,
 				86A27B252906341800B6FF97 /* Assets.xcassets */,
 				86A27B272906341800B6FF97 /* LaunchScreen.storyboard */,
 				86A27B2A2906341800B6FF97 /* Info.plist */,
 			);
 			path = ProgressBar_Test;
+			sourceTree = "<group>";
+		};
+		9C75CE330C917F2429F1E196 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				162ACAD64E459002CE20FE2A /* Pods_ProgressBar_Test.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86A27B2D2906341800B6FF97 /* Build configuration list for PBXNativeTarget "ProgressBar_Test" */;
 			buildPhases = (
+				9E0252E634DEAA3C18ABAD42 /* [CP] Check Pods Manifest.lock */,
 				86A27B152906341700B6FF97 /* Sources */,
 				86A27B162906341700B6FF97 /* Frameworks */,
 				86A27B172906341700B6FF97 /* Resources */,
+				A55B7F10FC2B5AC5F6F988FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +163,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9E0252E634DEAA3C18ABAD42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProgressBar_Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55B7F10FC2B5AC5F6F988FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProgressBar_Test/Pods-ProgressBar_Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProgressBar_Test/Pods-ProgressBar_Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProgressBar_Test/Pods-ProgressBar_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		86A27B152906341700B6FF97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A27B3529063B5700B6FF97 /* PieChartView.swift in Sources */,
 				86A27B212906341700B6FF97 /* ViewController.swift in Sources */,
 				86A27B1D2906341700B6FF97 /* AppDelegate.swift in Sources */,
 				86A27B1F2906341700B6FF97 /* SceneDelegate.swift in Sources */,
@@ -216,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +355,7 @@
 		};
 		86A27B2E2906341800B6FF97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B349BD018B1C368A385364F3 /* Pods-ProgressBar_Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +384,7 @@
 		};
 		86A27B2F2906341800B6FF97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372C6B46FCF8FD003DC3A3CF /* Pods-ProgressBar_Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
